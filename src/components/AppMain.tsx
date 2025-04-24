@@ -3,6 +3,7 @@ import { InfoPro } from "./InfoPro"
 import { infos } from "../info"
 import { IWay } from "../Type"
 import { Button } from "./Button"
+import { Timer } from "./Timer"
 
 interface WayProops{
     ways:IWay
@@ -21,7 +22,7 @@ const [click,setClick] = useState<keyof IWay>('нажми на меня' as keyo
              <Button onClick={()=>setClick('easy')}>easy</Button>
              <Button onClick={()=>setClick('program')}>program</Button>
              <span>{ways[click]}</span>
-             
+             <Timer />
            </div>
         </div>
     )
