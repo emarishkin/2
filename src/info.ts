@@ -1,4 +1,4 @@
-import { IInfo } from "./Type";
+import { IInfo, IWay } from "./Type";
 
 
 export const infos:IInfo[] = [
@@ -19,3 +19,9 @@ export const infos:IInfo[] = [
         descriptions:' Мы адаптируем материалы, как только на рынке обновляются технологии.'
     }
 ]
+
+export const ways:IWay = {
+    way:'Индивидуальное сопровождение',
+    easy:'Востребованность студентов',
+    program:'Системное и разноплановое обучение'
+}
